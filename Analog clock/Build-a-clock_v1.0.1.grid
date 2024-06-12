@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?><abs contexttype="opengear" gridsize="20" id="_top" keepalive="false">
+   <meta>
+      <widgets>
+         <widgetdescriptor id="widget.clock">
+            <config>
+               <params>
+                  <param access="1" constrainttype="INT_CHOICE" name="Time Offset" oid="offset" precision="0" type="INT16" value="3" widget="default">
+                     <constraint key="-12">-12</constraint>
+                     <constraint key="-11">-11</constraint>
+                     <constraint key="-10">-10</constraint>
+                     <constraint key="-9">-9</constraint>
+                     <constraint key="-8">-8</constraint>
+                     <constraint key="-7">-7</constraint>
+                     <constraint key="-6">-6</constraint>
+                     <constraint key="-5">-5</constraint>
+                     <constraint key="-4">-4</constraint>
+                     <constraint key="-3">-3</constraint>
+                     <constraint key="-2">-2</constraint>
+                     <constraint key="-1">-1</constraint>
+                     <constraint key="0">0</constraint>
+                     <constraint key="1">+1</constraint>
+                     <constraint key="2">+2</constraint>
+                     <constraint key="3">+3</constraint>
+                     <constraint key="4">+4</constraint>
+                     <constraint key="5">+5</constraint>
+                     <constraint key="6">+6</constraint>
+                     <constraint key="7">+7</constraint>
+                     <constraint key="8">+8</constraint>
+                     <constraint key="9">+9</constraint>
+                     <constraint key="10">+10</constraint>
+                     <constraint key="11">+11</constraint>
+                     <constraint key="12">+12</constraint>
+                  </param>
+                  <param access="1" constrainttype="INT_NULL" name="Clock ID" oid="clock.id" precision="0" type="INT16" value="0" widget="default"/>
+               </params>
+            </config>
+            <oglml>
+               <api immediate="true" src="dependencies/clockwidget/clock.api.js"/>
+               <abs height="400" left="51" style="bg-u:dependencies/clockwidget/face.png;bg-fill:fit;" top="35" width="432">
+                  <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+                     <abs id="%value['clock.id'][0]%sec-0" name="Tab 1" style="bg-u:dependencies/clockwidget/seconds/sec-0.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-1" name="Tab 2" style="bg-u:dependencies/clockwidget/seconds/sec-1.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-2" name="Tab 3" style="bg-u:dependencies/clockwidget/seconds/sec-2.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-3" name="Tab 4" style="bg-u:dependencies/clockwidget/seconds/sec-3.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-4" name="Tab 5" style="bg-u:dependencies/clockwidget/seconds/sec-4.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-5" name="Tab 6" style="bg-u:dependencies/clockwidget/seconds/sec-5.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-6" name="Tab 7" style="bg-u:dependencies/clockwidget/seconds/sec-6.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-7" name="Tab 8" style="bg-u:dependencies/clockwidget/seconds/sec-7.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-8" name="Tab 9" style="bg-u:dependencies/clockwidget/seconds/sec-8.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-9" name="Tab 10" style="bg-u:dependencies/clockwidget/seconds/sec-9.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-10" name="Tab 11" style="bg-u:dependencies/clockwidget/seconds/sec-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-11" name="Tab 12" style="bg-u:dependencies/clockwidget/seconds/sec-11.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-12" name="Tab 13" style="bg-u:dependencies/clockwidget/seconds/sec-12.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-13" name="Tab 14" style="bg-u:dependencies/clockwidget/seconds/sec-13.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-14" name="Tab 15" style="bg-u:dependencies/clockwidget/seconds/sec-14.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-15" name="Tab 16" style="bg-u:dependencies/clockwidget/seconds/sec-15.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-16" name="Tab 17" style="bg-u:dependencies/clockwidget/seconds/sec-16.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-17" name="Tab 18" style="bg-u:dependencies/clockwidget/seconds/sec-17.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-18" name="Tab 19" style="bg-u:dependencies/clockwidget/seconds/sec-18.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-19" name="Tab 20" style="bg-u:dependencies/clockwidget/seconds/sec-19.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-20" name="Tab 21" style="bg-u:dependencies/clockwidget/seconds/sec-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-21" name="Tab 22" style="bg-u:dependencies/clockwidget/seconds/sec-21.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-22" name="Tab 23" style="bg-u:dependencies/clockwidget/seconds/sec-22.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-23" name="Tab 24" style="bg-u:dependencies/clockwidget/seconds/sec-23.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-24" name="Tab 25" style="bg-u:dependencies/clockwidget/seconds/sec-24.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-25" name="Tab 26" style="bg-u:dependencies/clockwidget/seconds/sec-25.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-26" name="Tab 27" style="bg-u:dependencies/clockwidget/seconds/sec-26.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-27" name="Tab 28" style="bg-u:dependencies/clockwidget/seconds/sec-27.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-28" name="Tab 29" style="bg-u:dependencies/clockwidget/seconds/sec-28.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-29" name="Tab 30" style="bg-u:dependencies/clockwidget/seconds/sec-29.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-30" name="Tab 31" style="bg-u:dependencies/clockwidget/seconds/sec-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-31" name="Tab 32" style="bg-u:dependencies/clockwidget/seconds/sec-31.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-32" name="Tab 33" style="bg-u:dependencies/clockwidget/seconds/sec-32.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-33" name="Tab 34" style="bg-u:dependencies/clockwidget/seconds/sec-33.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-34" name="Tab 35" style="bg-u:dependencies/clockwidget/seconds/sec-34.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-35" name="Tab 36" style="bg-u:dependencies/clockwidget/seconds/sec-35.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-36" name="Tab 37" style="bg-u:dependencies/clockwidget/seconds/sec-36.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-37" name="Tab 38" style="bg-u:dependencies/clockwidget/seconds/sec-37.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-38" name="Tab 39" style="bg-u:dependencies/clockwidget/seconds/sec-38.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-39" name="Tab 40" style="bg-u:dependencies/clockwidget/seconds/sec-39.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-40" name="Tab 41" style="bg-u:dependencies/clockwidget/seconds/sec-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-41" name="Tab 42" style="bg-u:dependencies/clockwidget/seconds/sec-41.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-42" name="Tab 43" style="bg-u:dependencies/clockwidget/seconds/sec-42.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-43" name="Tab 44" style="bg-u:dependencies/clockwidget/seconds/sec-43.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-44" name="Tab 45" style="bg-u:dependencies/clockwidget/seconds/sec-44.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-45" name="Tab 46" style="bg-u:dependencies/clockwidget/seconds/sec-45.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-46" name="Tab 47" style="bg-u:dependencies/clockwidget/seconds/sec-46.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-47" name="Tab 48" style="bg-u:dependencies/clockwidget/seconds/sec-47.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-48" name="Tab 49" style="bg-u:dependencies/clockwidget/seconds/sec-48.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-49" name="Tab 50" style="bg-u:dependencies/clockwidget/seconds/sec-49.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-50" name="Tab 51" style="bg-u:dependencies/clockwidget/seconds/sec-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-51" name="Tab 52" style="bg-u:dependencies/clockwidget/seconds/sec-51.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-52" name="Tab 53" style="bg-u:dependencies/clockwidget/seconds/sec-52.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-53" name="Tab 54" style="bg-u:dependencies/clockwidget/seconds/sec-53.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-54" name="Tab 55" style="bg-u:dependencies/clockwidget/seconds/sec-54.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-55" name="Tab 56" style="bg-u:dependencies/clockwidget/seconds/sec-55.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-56" name="Tab 57" style="bg-u:dependencies/clockwidget/seconds/sec-56.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-57" name="Tab 58" style="bg-u:dependencies/clockwidget/seconds/sec-57.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-58" name="Tab 59" style="bg-u:dependencies/clockwidget/seconds/sec-58.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-59" name="Tab 60" style="bg-u:dependencies/clockwidget/seconds/sec-59.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%sec-60" name="Tab 61" style="bg-u:dependencies/clockwidget/seconds/sec-60.svg;bg-fill:none;"/>
+                  </tab>
+                  <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+                     <abs id="%value['clock.id'][0]%min-0" name="Tab 1" style="bg-u:dependencies/clockwidget/minutes/min-0.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-1" name="Tab 2" style="bg-u:dependencies/clockwidget/minutes/min-1.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-2" name="Tab 3" style="bg-u:dependencies/clockwidget/minutes/min-2.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-3" name="Tab 4" style="bg-u:dependencies/clockwidget/minutes/min-3.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-4" name="Tab 5" style="bg-u:dependencies/clockwidget/minutes/min-4.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-5" name="Tab 6" style="bg-u:dependencies/clockwidget/minutes/min-5.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-6" name="Tab 7" style="bg-u:dependencies/clockwidget/minutes/min-6.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-7" name="Tab 8" style="bg-u:dependencies/clockwidget/minutes/min-7.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-8" name="Tab 9" style="bg-u:dependencies/clockwidget/minutes/min-8.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-9" name="Tab 10" style="bg-u:dependencies/clockwidget/minutes/min-9.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-10" name="Tab 11" style="bg-u:dependencies/clockwidget/minutes/min-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-11" name="Tab 12" style="bg-u:dependencies/clockwidget/minutes/min-11.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-12" name="Tab 13" style="bg-u:dependencies/clockwidget/minutes/min-12.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-13" name="Tab 14" style="bg-u:dependencies/clockwidget/minutes/min-13.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-14" name="Tab 15" style="bg-u:dependencies/clockwidget/minutes/min-14.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-15" name="Tab 16" style="bg-u:dependencies/clockwidget/minutes/min-15.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-16" name="Tab 17" style="bg-u:dependencies/clockwidget/minutes/min-16.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-17" name="Tab 18" style="bg-u:dependencies/clockwidget/minutes/min-17.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-18" name="Tab 19" style="bg-u:dependencies/clockwidget/minutes/min-18.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-19" name="Tab 20" style="bg-u:dependencies/clockwidget/minutes/min-19.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-20" name="Tab 21" style="bg-u:dependencies/clockwidget/minutes/min-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-21" name="Tab 22" style="bg-u:dependencies/clockwidget/minutes/min-21.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-22" name="Tab 23" style="bg-u:dependencies/clockwidget/minutes/min-22.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-23" name="Tab 24" style="bg-u:dependencies/clockwidget/minutes/min-23.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-24" name="Tab 25" style="bg-u:dependencies/clockwidget/minutes/min-24.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-25" name="Tab 26" style="bg-u:dependencies/clockwidget/minutes/min-25.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-26" name="Tab 27" style="bg-u:dependencies/clockwidget/minutes/min-26.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-27" name="Tab 28" style="bg-u:dependencies/clockwidget/minutes/min-27.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-28" name="Tab 29" style="bg-u:dependencies/clockwidget/minutes/min-28.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-29" name="Tab 30" style="bg-u:dependencies/clockwidget/minutes/min-29.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-30" name="Tab 31" style="bg-u:dependencies/clockwidget/minutes/min-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-31" name="Tab 32" style="bg-u:dependencies/clockwidget/minutes/min-31.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-32" name="Tab 33" style="bg-u:dependencies/clockwidget/minutes/min-32.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-33" name="Tab 34" style="bg-u:dependencies/clockwidget/minutes/min-33.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-34" name="Tab 35" style="bg-u:dependencies/clockwidget/minutes/min-34.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-35" name="Tab 36" style="bg-u:dependencies/clockwidget/minutes/min-35.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-36" name="Tab 37" style="bg-u:dependencies/clockwidget/minutes/min-36.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-37" name="Tab 38" style="bg-u:dependencies/clockwidget/minutes/min-37.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-38" name="Tab 39" style="bg-u:dependencies/clockwidget/minutes/min-38.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-39" name="Tab 40" style="bg-u:dependencies/clockwidget/minutes/min-39.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-40" name="Tab 41" style="bg-u:dependencies/clockwidget/minutes/min-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-41" name="Tab 42" style="bg-u:dependencies/clockwidget/minutes/min-41.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-42" name="Tab 43" style="bg-u:dependencies/clockwidget/minutes/min-42.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-43" name="Tab 44" style="bg-u:dependencies/clockwidget/minutes/min-43.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-44" name="Tab 45" style="bg-u:dependencies/clockwidget/minutes/min-44.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-45" name="Tab 46" style="bg-u:dependencies/clockwidget/minutes/min-45.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-46" name="Tab 47" style="bg-u:dependencies/clockwidget/minutes/min-46.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-47" name="Tab 48" style="bg-u:dependencies/clockwidget/minutes/min-47.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-48" name="Tab 49" style="bg-u:dependencies/clockwidget/minutes/min-48.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-49" name="Tab 50" style="bg-u:dependencies/clockwidget/minutes/min-49.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-50" name="Tab 51" style="bg-u:dependencies/clockwidget/minutes/min-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-51" name="Tab 52" style="bg-u:dependencies/clockwidget/minutes/min-51.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-52" name="Tab 53" style="bg-u:dependencies/clockwidget/minutes/min-52.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-53" name="Tab 54" style="bg-u:dependencies/clockwidget/minutes/min-53.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-54" name="Tab 55" style="bg-u:dependencies/clockwidget/minutes/min-54.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-55" name="Tab 56" style="bg-u:dependencies/clockwidget/minutes/min-55.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-56" name="Tab 57" style="bg-u:dependencies/clockwidget/minutes/min-56.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-57" name="Tab 58" style="bg-u:dependencies/clockwidget/minutes/min-57.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-58" name="Tab 59" style="bg-u:dependencies/clockwidget/minutes/min-58.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-59" name="Tab 60" style="bg-u:dependencies/clockwidget/minutes/min-59.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%min-60" name="Tab 61" style="bg-u:dependencies/clockwidget/minutes/min-60.svg;bg-fill:none;"/>
+                  </tab>
+                  <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+                     <abs id="%value['clock.id'][0]%hrs-00-00" name="Tab 1" style="bg-u:dependencies/clockwidget/hours/hrs-00-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-00-10" name="Tab 2" style="bg-u:dependencies/clockwidget/hours/hrs-00-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-00-20" name="Tab 3" style="bg-u:dependencies/clockwidget/hours/hrs-00-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-00-30" name="Tab 4" style="bg-u:dependencies/clockwidget/hours/hrs-00-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-00-40" name="Tab 5" style="bg-u:dependencies/clockwidget/hours/hrs-00-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-00-50" name="Tab 6" style="bg-u:dependencies/clockwidget/hours/hrs-00-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-00" name="Tab 7" style="bg-u:dependencies/clockwidget/hours/hrs-01-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-10" name="Tab 8" style="bg-u:dependencies/clockwidget/hours/hrs-01-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-20" name="Tab 9" style="bg-u:dependencies/clockwidget/hours/hrs-01-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-30" name="Tab 10" style="bg-u:dependencies/clockwidget/hours/hrs-01-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-40" name="Tab 11" style="bg-u:dependencies/clockwidget/hours/hrs-01-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-01-50" name="Tab 12" style="bg-u:dependencies/clockwidget/hours/hrs-01-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-00" name="Tab 13" style="bg-u:dependencies/clockwidget/hours/hrs-02-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-10" name="Tab 14" style="bg-u:dependencies/clockwidget/hours/hrs-02-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-20" name="Tab 15" style="bg-u:dependencies/clockwidget/hours/hrs-02-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-30" name="Tab 16" style="bg-u:dependencies/clockwidget/hours/hrs-02-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-40" name="Tab 17" style="bg-u:dependencies/clockwidget/hours/hrs-02-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-02-50" name="Tab 18" style="bg-u:dependencies/clockwidget/hours/hrs-02-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-00" name="Tab 19" style="bg-u:dependencies/clockwidget/hours/hrs-03-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-10" name="Tab 20" style="bg-u:dependencies/clockwidget/hours/hrs-03-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-20" name="Tab 21" style="bg-u:dependencies/clockwidget/hours/hrs-03-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-30" name="Tab 22" style="bg-u:dependencies/clockwidget/hours/hrs-03-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-40" name="Tab 23" style="bg-u:dependencies/clockwidget/hours/hrs-03-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-03-50" name="Tab 24" style="bg-u:dependencies/clockwidget/hours/hrs-03-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-00" name="Tab 25" style="bg-u:dependencies/clockwidget/hours/hrs-04-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-10" name="Tab 26" style="bg-u:dependencies/clockwidget/hours/hrs-04-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-20" name="Tab 27" style="bg-u:dependencies/clockwidget/hours/hrs-04-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-30" name="Tab 28" style="bg-u:dependencies/clockwidget/hours/hrs-04-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-40" name="Tab 29" style="bg-u:dependencies/clockwidget/hours/hrs-04-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-04-50" name="Tab 30" style="bg-u:dependencies/clockwidget/hours/hrs-04-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-00" name="Tab 31" style="bg-u:dependencies/clockwidget/hours/hrs-05-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-10" name="Tab 32" style="bg-u:dependencies/clockwidget/hours/hrs-05-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-20" name="Tab 33" style="bg-u:dependencies/clockwidget/hours/hrs-05-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-30" name="Tab 34" style="bg-u:dependencies/clockwidget/hours/hrs-05-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-40" name="Tab 35" style="bg-u:dependencies/clockwidget/hours/hrs-05-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-05-50" name="Tab 36" style="bg-u:dependencies/clockwidget/hours/hrs-05-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-00" name="Tab 37" style="bg-u:dependencies/clockwidget/hours/hrs-06-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-10" name="Tab 38" style="bg-u:dependencies/clockwidget/hours/hrs-06-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-20" name="Tab 39" style="bg-u:dependencies/clockwidget/hours/hrs-06-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-30" name="Tab 40" style="bg-u:dependencies/clockwidget/hours/hrs-06-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-40" name="Tab 41" style="bg-u:dependencies/clockwidget/hours/hrs-06-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-06-50" name="Tab 42" style="bg-u:dependencies/clockwidget/hours/hrs-06-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-00" name="Tab 43" style="bg-u:dependencies/clockwidget/hours/hrs-07-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-10" name="Tab 44" style="bg-u:dependencies/clockwidget/hours/hrs-07-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-20" name="Tab 45" style="bg-u:dependencies/clockwidget/hours/hrs-07-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-30" name="Tab 46" style="bg-u:dependencies/clockwidget/hours/hrs-07-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-40" name="Tab 47" style="bg-u:dependencies/clockwidget/hours/hrs-07-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-07-50" name="Tab 48" style="bg-u:dependencies/clockwidget/hours/hrs-07-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-00" name="Tab 49" style="bg-u:dependencies/clockwidget/hours/hrs-08-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-10" name="Tab 50" style="bg-u:dependencies/clockwidget/hours/hrs-08-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-20" name="Tab 51" style="bg-u:dependencies/clockwidget/hours/hrs-08-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-30" name="Tab 52" style="bg-u:dependencies/clockwidget/hours/hrs-08-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-40" name="Tab 53" style="bg-u:dependencies/clockwidget/hours/hrs-08-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-08-50" name="Tab 54" style="bg-u:dependencies/clockwidget/hours/hrs-08-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-00" name="Tab 55" style="bg-u:dependencies/clockwidget/hours/hrs-09-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-10" name="Tab 56" style="bg-u:dependencies/clockwidget/hours/hrs-09-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-20" name="Tab 57" style="bg-u:dependencies/clockwidget/hours/hrs-09-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-30" name="Tab 58" style="bg-u:dependencies/clockwidget/hours/hrs-09-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-40" name="Tab 59" style="bg-u:dependencies/clockwidget/hours/hrs-09-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-09-50" name="Tab 60" style="bg-u:dependencies/clockwidget/hours/hrs-09-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-00" name="Tab 61" style="bg-u:dependencies/clockwidget/hours/hrs-10-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-10" name="Tab 62" style="bg-u:dependencies/clockwidget/hours/hrs-10-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-20" name="Tab 63" style="bg-u:dependencies/clockwidget/hours/hrs-10-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-30" name="Tab 64" style="bg-u:dependencies/clockwidget/hours/hrs-10-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-40" name="Tab 65" style="bg-u:dependencies/clockwidget/hours/hrs-10-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-10-50" name="Tab 66" style="bg-u:dependencies/clockwidget/hours/hrs-10-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-00" name="Tab 67" style="bg-u:dependencies/clockwidget/hours/hrs-11-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-10" name="Tab 68" style="bg-u:dependencies/clockwidget/hours/hrs-11-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-20" name="Tab 69" style="bg-u:dependencies/clockwidget/hours/hrs-11-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-30" name="Tab 70" style="bg-u:dependencies/clockwidget/hours/hrs-11-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-40" name="Tab 71" style="bg-u:dependencies/clockwidget/hours/hrs-11-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-11-50" name="Tab 72" style="bg-u:dependencies/clockwidget/hours/hrs-11-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-00" name="Tab 73" style="bg-u:dependencies/clockwidget/hours/hrs-12-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-10" name="Tab 74" style="bg-u:dependencies/clockwidget/hours/hrs-12-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-20" name="Tab 75" style="bg-u:dependencies/clockwidget/hours/hrs-12-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-30" name="Tab 76" style="bg-u:dependencies/clockwidget/hours/hrs-12-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-40" name="Tab 77" style="bg-u:dependencies/clockwidget/hours/hrs-12-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-12-50" name="Tab 78" style="bg-u:dependencies/clockwidget/hours/hrs-12-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-00" name="Tab 79" style="bg-u:dependencies/clockwidget/hours/hrs-13-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-10" name="Tab 80" style="bg-u:dependencies/clockwidget/hours/hrs-13-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-20" name="Tab 81" style="bg-u:dependencies/clockwidget/hours/hrs-13-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-30" name="Tab 82" style="bg-u:dependencies/clockwidget/hours/hrs-13-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-40" name="Tab 83" style="bg-u:dependencies/clockwidget/hours/hrs-13-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-13-50" name="Tab 84" style="bg-u:dependencies/clockwidget/hours/hrs-13-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-00" name="Tab 85" style="bg-u:dependencies/clockwidget/hours/hrs-14-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-10" name="Tab 86" style="bg-u:dependencies/clockwidget/hours/hrs-14-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-20" name="Tab 87" style="bg-u:dependencies/clockwidget/hours/hrs-14-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-30" name="Tab 88" style="bg-u:dependencies/clockwidget/hours/hrs-14-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-40" name="Tab 89" style="bg-u:dependencies/clockwidget/hours/hrs-14-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-14-50" name="Tab 90" style="bg-u:dependencies/clockwidget/hours/hrs-14-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-00" name="Tab 91" style="bg-u:dependencies/clockwidget/hours/hrs-15-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-10" name="Tab 92" style="bg-u:dependencies/clockwidget/hours/hrs-15-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-20" name="Tab 93" style="bg-u:dependencies/clockwidget/hours/hrs-15-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-30" name="Tab 94" style="bg-u:dependencies/clockwidget/hours/hrs-15-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-40" name="Tab 95" style="bg-u:dependencies/clockwidget/hours/hrs-15-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-15-50" name="Tab 96" style="bg-u:dependencies/clockwidget/hours/hrs-15-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-00" name="Tab 97" style="bg-u:dependencies/clockwidget/hours/hrs-16-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-10" name="Tab 98" style="bg-u:dependencies/clockwidget/hours/hrs-16-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-20" name="Tab 99" style="bg-u:dependencies/clockwidget/hours/hrs-16-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-30" name="Tab 100" style="bg-u:dependencies/clockwidget/hours/hrs-16-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-40" name="Tab 101" style="bg-u:dependencies/clockwidget/hours/hrs-16-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-16-50" name="Tab 102" style="bg-u:dependencies/clockwidget/hours/hrs-16-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-00" name="Tab 103" style="bg-u:dependencies/clockwidget/hours/hrs-17-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-10" name="Tab 104" style="bg-u:dependencies/clockwidget/hours/hrs-17-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-20" name="Tab 105" style="bg-u:dependencies/clockwidget/hours/hrs-17-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-30" name="Tab 106" style="bg-u:dependencies/clockwidget/hours/hrs-17-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-40" name="Tab 107" style="bg-u:dependencies/clockwidget/hours/hrs-17-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-17-50" name="Tab 108" style="bg-u:dependencies/clockwidget/hours/hrs-17-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-00" name="Tab 109" style="bg-u:dependencies/clockwidget/hours/hrs-18-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-10" name="Tab 110" style="bg-u:dependencies/clockwidget/hours/hrs-18-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-20" name="Tab 111" style="bg-u:dependencies/clockwidget/hours/hrs-18-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-30" name="Tab 112" style="bg-u:dependencies/clockwidget/hours/hrs-18-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-40" name="Tab 113" style="bg-u:dependencies/clockwidget/hours/hrs-18-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-18-50" name="Tab 114" style="bg-u:dependencies/clockwidget/hours/hrs-18-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-00" name="Tab 115" style="bg-u:dependencies/clockwidget/hours/hrs-19-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-10" name="Tab 116" style="bg-u:dependencies/clockwidget/hours/hrs-19-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-20" name="Tab 117" style="bg-u:dependencies/clockwidget/hours/hrs-19-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-30" name="Tab 118" style="bg-u:dependencies/clockwidget/hours/hrs-19-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-40" name="Tab 119" style="bg-u:dependencies/clockwidget/hours/hrs-19-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-19-50" name="Tab 120" style="bg-u:dependencies/clockwidget/hours/hrs-19-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-00" name="Tab 121" style="bg-u:dependencies/clockwidget/hours/hrs-20-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-10" name="Tab 122" style="bg-u:dependencies/clockwidget/hours/hrs-20-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-20" name="Tab 123" style="bg-u:dependencies/clockwidget/hours/hrs-20-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-30" name="Tab 124" style="bg-u:dependencies/clockwidget/hours/hrs-20-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-40" name="Tab 125" style="bg-u:dependencies/clockwidget/hours/hrs-20-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-20-50" name="Tab 126" style="bg-u:dependencies/clockwidget/hours/hrs-20-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-00" name="Tab 127" style="bg-u:dependencies/clockwidget/hours/hrs-21-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-10" name="Tab 128" style="bg-u:dependencies/clockwidget/hours/hrs-21-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-20" name="Tab 129" style="bg-u:dependencies/clockwidget/hours/hrs-21-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-30" name="Tab 130" style="bg-u:dependencies/clockwidget/hours/hrs-21-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-40" name="Tab 131" style="bg-u:dependencies/clockwidget/hours/hrs-21-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-21-50" name="Tab 132" style="bg-u:dependencies/clockwidget/hours/hrs-21-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-00" name="Tab 133" style="bg-u:dependencies/clockwidget/hours/hrs-22-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-10" name="Tab 134" style="bg-u:dependencies/clockwidget/hours/hrs-22-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-20" name="Tab 135" style="bg-u:dependencies/clockwidget/hours/hrs-22-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-30" name="Tab 136" style="bg-u:dependencies/clockwidget/hours/hrs-22-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-40" name="Tab 137" style="bg-u:dependencies/clockwidget/hours/hrs-22-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-22-50" name="Tab 138" style="bg-u:dependencies/clockwidget/hours/hrs-22-50.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-00" name="Tab 139" style="bg-u:dependencies/clockwidget/hours/hrs-23-00.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-10" name="Tab 140" style="bg-u:dependencies/clockwidget/hours/hrs-23-10.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-20" name="Tab 141" style="bg-u:dependencies/clockwidget/hours/hrs-23-20.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-30" name="Tab 142" style="bg-u:dependencies/clockwidget/hours/hrs-23-30.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-40" name="Tab 143" style="bg-u:dependencies/clockwidget/hours/hrs-23-40.svg;bg-fill:none;"/>
+                     <abs id="%value['clock.id'][0]%hrs-23-50" name="Tab 144" style="bg-u:dependencies/clockwidget/hours/hrs-23-50.svg;bg-fill:none;"/>
+                  </tab>
+               </abs>
+            </oglml>
+         </widgetdescriptor>
+      </widgets>
+   </meta>
+   <meta>
+      <params>
+         <param access="1" constrainttype="INT_CHOICE" name="Time Offset" oid="offset" precision="0" type="INT16" value="-3" widget="default">
+            <constraint key="-12">-12</constraint>
+            <constraint key="-11">-11</constraint>
+            <constraint key="-10">-10</constraint>
+            <constraint key="-9">-9</constraint>
+            <constraint key="-8">-8</constraint>
+            <constraint key="-7">-7</constraint>
+            <constraint key="-6">-6</constraint>
+            <constraint key="-5">-5</constraint>
+            <constraint key="-4">-4</constraint>
+            <constraint key="-3">-3</constraint>
+            <constraint key="-2">-2</constraint>
+            <constraint key="-1">-1</constraint>
+            <constraint key="0">0</constraint>
+            <constraint key="1">+1</constraint>
+            <constraint key="2">+2</constraint>
+            <constraint key="3">+3</constraint>
+            <constraint key="4">+4</constraint>
+            <constraint key="5">+5</constraint>
+            <constraint key="6">+6</constraint>
+            <constraint key="7">+7</constraint>
+            <constraint key="8">+8</constraint>
+            <constraint key="9">+9</constraint>
+            <constraint key="10">+10</constraint>
+            <constraint key="11">+11</constraint>
+            <constraint key="12">+12</constraint>
+         </param>
+         <param access="1" constrainttype="INT_NULL" name="Clock ID" oid="clock.id" precision="0" type="INT16" value="0" widget="default"/>
+      </params>
+      <api immediate="true" src="dependencies/clockwidget/clock.api.js"/>
+   </meta>
+   <abs height="400" left="51" style="bg-u:dependencies/clockwidget/face.png;bg-fill:fit;" top="35" width="432">
+      <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+         <abs id="%value['clock.id'][0]%sec-0" name="Tab 1" style="bg-u:dependencies/clockwidget/seconds/sec-0.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-1" name="Tab 2" style="bg-u:dependencies/clockwidget/seconds/sec-1.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-2" name="Tab 3" style="bg-u:dependencies/clockwidget/seconds/sec-2.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-3" name="Tab 4" style="bg-u:dependencies/clockwidget/seconds/sec-3.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-4" name="Tab 5" style="bg-u:dependencies/clockwidget/seconds/sec-4.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-5" name="Tab 6" style="bg-u:dependencies/clockwidget/seconds/sec-5.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-6" name="Tab 7" style="bg-u:dependencies/clockwidget/seconds/sec-6.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-7" name="Tab 8" style="bg-u:dependencies/clockwidget/seconds/sec-7.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-8" name="Tab 9" style="bg-u:dependencies/clockwidget/seconds/sec-8.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-9" name="Tab 10" style="bg-u:dependencies/clockwidget/seconds/sec-9.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-10" name="Tab 11" style="bg-u:dependencies/clockwidget/seconds/sec-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-11" name="Tab 12" style="bg-u:dependencies/clockwidget/seconds/sec-11.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-12" name="Tab 13" style="bg-u:dependencies/clockwidget/seconds/sec-12.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-13" name="Tab 14" style="bg-u:dependencies/clockwidget/seconds/sec-13.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-14" name="Tab 15" style="bg-u:dependencies/clockwidget/seconds/sec-14.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-15" name="Tab 16" style="bg-u:dependencies/clockwidget/seconds/sec-15.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-16" name="Tab 17" style="bg-u:dependencies/clockwidget/seconds/sec-16.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-17" name="Tab 18" style="bg-u:dependencies/clockwidget/seconds/sec-17.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-18" name="Tab 19" style="bg-u:dependencies/clockwidget/seconds/sec-18.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-19" name="Tab 20" style="bg-u:dependencies/clockwidget/seconds/sec-19.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-20" name="Tab 21" style="bg-u:dependencies/clockwidget/seconds/sec-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-21" name="Tab 22" style="bg-u:dependencies/clockwidget/seconds/sec-21.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-22" name="Tab 23" style="bg-u:dependencies/clockwidget/seconds/sec-22.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-23" name="Tab 24" style="bg-u:dependencies/clockwidget/seconds/sec-23.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-24" name="Tab 25" style="bg-u:dependencies/clockwidget/seconds/sec-24.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-25" name="Tab 26" style="bg-u:dependencies/clockwidget/seconds/sec-25.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-26" name="Tab 27" style="bg-u:dependencies/clockwidget/seconds/sec-26.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-27" name="Tab 28" style="bg-u:dependencies/clockwidget/seconds/sec-27.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-28" name="Tab 29" style="bg-u:dependencies/clockwidget/seconds/sec-28.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-29" name="Tab 30" style="bg-u:dependencies/clockwidget/seconds/sec-29.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-30" name="Tab 31" style="bg-u:dependencies/clockwidget/seconds/sec-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-31" name="Tab 32" style="bg-u:dependencies/clockwidget/seconds/sec-31.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-32" name="Tab 33" style="bg-u:dependencies/clockwidget/seconds/sec-32.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-33" name="Tab 34" style="bg-u:dependencies/clockwidget/seconds/sec-33.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-34" name="Tab 35" style="bg-u:dependencies/clockwidget/seconds/sec-34.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-35" name="Tab 36" style="bg-u:dependencies/clockwidget/seconds/sec-35.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-36" name="Tab 37" style="bg-u:dependencies/clockwidget/seconds/sec-36.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-37" name="Tab 38" style="bg-u:dependencies/clockwidget/seconds/sec-37.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-38" name="Tab 39" style="bg-u:dependencies/clockwidget/seconds/sec-38.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-39" name="Tab 40" style="bg-u:dependencies/clockwidget/seconds/sec-39.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-40" name="Tab 41" style="bg-u:dependencies/clockwidget/seconds/sec-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-41" name="Tab 42" style="bg-u:dependencies/clockwidget/seconds/sec-41.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-42" name="Tab 43" style="bg-u:dependencies/clockwidget/seconds/sec-42.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-43" name="Tab 44" style="bg-u:dependencies/clockwidget/seconds/sec-43.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-44" name="Tab 45" style="bg-u:dependencies/clockwidget/seconds/sec-44.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-45" name="Tab 46" style="bg-u:dependencies/clockwidget/seconds/sec-45.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-46" name="Tab 47" style="bg-u:dependencies/clockwidget/seconds/sec-46.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-47" name="Tab 48" style="bg-u:dependencies/clockwidget/seconds/sec-47.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-48" name="Tab 49" style="bg-u:dependencies/clockwidget/seconds/sec-48.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-49" name="Tab 50" style="bg-u:dependencies/clockwidget/seconds/sec-49.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-50" name="Tab 51" style="bg-u:dependencies/clockwidget/seconds/sec-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-51" name="Tab 52" style="bg-u:dependencies/clockwidget/seconds/sec-51.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-52" name="Tab 53" style="bg-u:dependencies/clockwidget/seconds/sec-52.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-53" name="Tab 54" style="bg-u:dependencies/clockwidget/seconds/sec-53.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-54" name="Tab 55" style="bg-u:dependencies/clockwidget/seconds/sec-54.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-55" name="Tab 56" style="bg-u:dependencies/clockwidget/seconds/sec-55.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-56" name="Tab 57" style="bg-u:dependencies/clockwidget/seconds/sec-56.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-57" name="Tab 58" style="bg-u:dependencies/clockwidget/seconds/sec-57.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-58" name="Tab 59" style="bg-u:dependencies/clockwidget/seconds/sec-58.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-59" name="Tab 60" style="bg-u:dependencies/clockwidget/seconds/sec-59.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%sec-60" name="Tab 61" style="bg-u:dependencies/clockwidget/seconds/sec-60.svg;bg-fill:none;"/>
+      </tab>
+      <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+         <abs id="%value['clock.id'][0]%min-0" name="Tab 1" style="bg-u:dependencies/clockwidget/minutes/min-0.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-1" name="Tab 2" style="bg-u:dependencies/clockwidget/minutes/min-1.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-2" name="Tab 3" style="bg-u:dependencies/clockwidget/minutes/min-2.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-3" name="Tab 4" style="bg-u:dependencies/clockwidget/minutes/min-3.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-4" name="Tab 5" style="bg-u:dependencies/clockwidget/minutes/min-4.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-5" name="Tab 6" style="bg-u:dependencies/clockwidget/minutes/min-5.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-6" name="Tab 7" style="bg-u:dependencies/clockwidget/minutes/min-6.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-7" name="Tab 8" style="bg-u:dependencies/clockwidget/minutes/min-7.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-8" name="Tab 9" style="bg-u:dependencies/clockwidget/minutes/min-8.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-9" name="Tab 10" style="bg-u:dependencies/clockwidget/minutes/min-9.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-10" name="Tab 11" style="bg-u:dependencies/clockwidget/minutes/min-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-11" name="Tab 12" style="bg-u:dependencies/clockwidget/minutes/min-11.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-12" name="Tab 13" style="bg-u:dependencies/clockwidget/minutes/min-12.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-13" name="Tab 14" style="bg-u:dependencies/clockwidget/minutes/min-13.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-14" name="Tab 15" style="bg-u:dependencies/clockwidget/minutes/min-14.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-15" name="Tab 16" style="bg-u:dependencies/clockwidget/minutes/min-15.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-16" name="Tab 17" style="bg-u:dependencies/clockwidget/minutes/min-16.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-17" name="Tab 18" style="bg-u:dependencies/clockwidget/minutes/min-17.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-18" name="Tab 19" style="bg-u:dependencies/clockwidget/minutes/min-18.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-19" name="Tab 20" style="bg-u:dependencies/clockwidget/minutes/min-19.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-20" name="Tab 21" style="bg-u:dependencies/clockwidget/minutes/min-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-21" name="Tab 22" style="bg-u:dependencies/clockwidget/minutes/min-21.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-22" name="Tab 23" style="bg-u:dependencies/clockwidget/minutes/min-22.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-23" name="Tab 24" style="bg-u:dependencies/clockwidget/minutes/min-23.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-24" name="Tab 25" style="bg-u:dependencies/clockwidget/minutes/min-24.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-25" name="Tab 26" style="bg-u:dependencies/clockwidget/minutes/min-25.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-26" name="Tab 27" style="bg-u:dependencies/clockwidget/minutes/min-26.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-27" name="Tab 28" style="bg-u:dependencies/clockwidget/minutes/min-27.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-28" name="Tab 29" style="bg-u:dependencies/clockwidget/minutes/min-28.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-29" name="Tab 30" style="bg-u:dependencies/clockwidget/minutes/min-29.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-30" name="Tab 31" style="bg-u:dependencies/clockwidget/minutes/min-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-31" name="Tab 32" style="bg-u:dependencies/clockwidget/minutes/min-31.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-32" name="Tab 33" style="bg-u:dependencies/clockwidget/minutes/min-32.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-33" name="Tab 34" style="bg-u:dependencies/clockwidget/minutes/min-33.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-34" name="Tab 35" style="bg-u:dependencies/clockwidget/minutes/min-34.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-35" name="Tab 36" style="bg-u:dependencies/clockwidget/minutes/min-35.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-36" name="Tab 37" style="bg-u:dependencies/clockwidget/minutes/min-36.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-37" name="Tab 38" style="bg-u:dependencies/clockwidget/minutes/min-37.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-38" name="Tab 39" style="bg-u:dependencies/clockwidget/minutes/min-38.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-39" name="Tab 40" style="bg-u:dependencies/clockwidget/minutes/min-39.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-40" name="Tab 41" style="bg-u:dependencies/clockwidget/minutes/min-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-41" name="Tab 42" style="bg-u:dependencies/clockwidget/minutes/min-41.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-42" name="Tab 43" style="bg-u:dependencies/clockwidget/minutes/min-42.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-43" name="Tab 44" style="bg-u:dependencies/clockwidget/minutes/min-43.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-44" name="Tab 45" style="bg-u:dependencies/clockwidget/minutes/min-44.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-45" name="Tab 46" style="bg-u:dependencies/clockwidget/minutes/min-45.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-46" name="Tab 47" style="bg-u:dependencies/clockwidget/minutes/min-46.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-47" name="Tab 48" style="bg-u:dependencies/clockwidget/minutes/min-47.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-48" name="Tab 49" style="bg-u:dependencies/clockwidget/minutes/min-48.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-49" name="Tab 50" style="bg-u:dependencies/clockwidget/minutes/min-49.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-50" name="Tab 51" style="bg-u:dependencies/clockwidget/minutes/min-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-51" name="Tab 52" style="bg-u:dependencies/clockwidget/minutes/min-51.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-52" name="Tab 53" style="bg-u:dependencies/clockwidget/minutes/min-52.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-53" name="Tab 54" style="bg-u:dependencies/clockwidget/minutes/min-53.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-54" name="Tab 55" style="bg-u:dependencies/clockwidget/minutes/min-54.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-55" name="Tab 56" style="bg-u:dependencies/clockwidget/minutes/min-55.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-56" name="Tab 57" style="bg-u:dependencies/clockwidget/minutes/min-56.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-57" name="Tab 58" style="bg-u:dependencies/clockwidget/minutes/min-57.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-58" name="Tab 59" style="bg-u:dependencies/clockwidget/minutes/min-58.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-59" name="Tab 60" style="bg-u:dependencies/clockwidget/minutes/min-59.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%min-60" name="Tab 61" style="bg-u:dependencies/clockwidget/minutes/min-60.svg;bg-fill:none;"/>
+      </tab>
+      <tab bottom="1" left="2" right="3" tabposition="none" top="0">
+         <abs id="%value['clock.id'][0]%hrs-00-00" name="Tab 1" style="bg-u:dependencies/clockwidget/hours/hrs-00-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-00-10" name="Tab 2" style="bg-u:dependencies/clockwidget/hours/hrs-00-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-00-20" name="Tab 3" style="bg-u:dependencies/clockwidget/hours/hrs-00-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-00-30" name="Tab 4" style="bg-u:dependencies/clockwidget/hours/hrs-00-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-00-40" name="Tab 5" style="bg-u:dependencies/clockwidget/hours/hrs-00-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-00-50" name="Tab 6" style="bg-u:dependencies/clockwidget/hours/hrs-00-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-00" name="Tab 7" style="bg-u:dependencies/clockwidget/hours/hrs-01-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-10" name="Tab 8" style="bg-u:dependencies/clockwidget/hours/hrs-01-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-20" name="Tab 9" style="bg-u:dependencies/clockwidget/hours/hrs-01-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-30" name="Tab 10" style="bg-u:dependencies/clockwidget/hours/hrs-01-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-40" name="Tab 11" style="bg-u:dependencies/clockwidget/hours/hrs-01-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-01-50" name="Tab 12" style="bg-u:dependencies/clockwidget/hours/hrs-01-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-00" name="Tab 13" style="bg-u:dependencies/clockwidget/hours/hrs-02-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-10" name="Tab 14" style="bg-u:dependencies/clockwidget/hours/hrs-02-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-20" name="Tab 15" style="bg-u:dependencies/clockwidget/hours/hrs-02-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-30" name="Tab 16" style="bg-u:dependencies/clockwidget/hours/hrs-02-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-40" name="Tab 17" style="bg-u:dependencies/clockwidget/hours/hrs-02-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-02-50" name="Tab 18" style="bg-u:dependencies/clockwidget/hours/hrs-02-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-00" name="Tab 19" style="bg-u:dependencies/clockwidget/hours/hrs-03-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-10" name="Tab 20" style="bg-u:dependencies/clockwidget/hours/hrs-03-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-20" name="Tab 21" style="bg-u:dependencies/clockwidget/hours/hrs-03-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-30" name="Tab 22" style="bg-u:dependencies/clockwidget/hours/hrs-03-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-40" name="Tab 23" style="bg-u:dependencies/clockwidget/hours/hrs-03-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-03-50" name="Tab 24" style="bg-u:dependencies/clockwidget/hours/hrs-03-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-00" name="Tab 25" style="bg-u:dependencies/clockwidget/hours/hrs-04-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-10" name="Tab 26" style="bg-u:dependencies/clockwidget/hours/hrs-04-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-20" name="Tab 27" style="bg-u:dependencies/clockwidget/hours/hrs-04-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-30" name="Tab 28" style="bg-u:dependencies/clockwidget/hours/hrs-04-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-40" name="Tab 29" style="bg-u:dependencies/clockwidget/hours/hrs-04-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-04-50" name="Tab 30" style="bg-u:dependencies/clockwidget/hours/hrs-04-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-00" name="Tab 31" style="bg-u:dependencies/clockwidget/hours/hrs-05-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-10" name="Tab 32" style="bg-u:dependencies/clockwidget/hours/hrs-05-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-20" name="Tab 33" style="bg-u:dependencies/clockwidget/hours/hrs-05-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-30" name="Tab 34" style="bg-u:dependencies/clockwidget/hours/hrs-05-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-40" name="Tab 35" style="bg-u:dependencies/clockwidget/hours/hrs-05-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-05-50" name="Tab 36" style="bg-u:dependencies/clockwidget/hours/hrs-05-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-00" name="Tab 37" style="bg-u:dependencies/clockwidget/hours/hrs-06-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-10" name="Tab 38" style="bg-u:dependencies/clockwidget/hours/hrs-06-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-20" name="Tab 39" style="bg-u:dependencies/clockwidget/hours/hrs-06-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-30" name="Tab 40" style="bg-u:dependencies/clockwidget/hours/hrs-06-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-40" name="Tab 41" style="bg-u:dependencies/clockwidget/hours/hrs-06-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-06-50" name="Tab 42" style="bg-u:dependencies/clockwidget/hours/hrs-06-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-00" name="Tab 43" style="bg-u:dependencies/clockwidget/hours/hrs-07-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-10" name="Tab 44" style="bg-u:dependencies/clockwidget/hours/hrs-07-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-20" name="Tab 45" style="bg-u:dependencies/clockwidget/hours/hrs-07-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-30" name="Tab 46" style="bg-u:dependencies/clockwidget/hours/hrs-07-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-40" name="Tab 47" style="bg-u:dependencies/clockwidget/hours/hrs-07-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-07-50" name="Tab 48" style="bg-u:dependencies/clockwidget/hours/hrs-07-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-00" name="Tab 49" style="bg-u:dependencies/clockwidget/hours/hrs-08-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-10" name="Tab 50" style="bg-u:dependencies/clockwidget/hours/hrs-08-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-20" name="Tab 51" style="bg-u:dependencies/clockwidget/hours/hrs-08-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-30" name="Tab 52" style="bg-u:dependencies/clockwidget/hours/hrs-08-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-40" name="Tab 53" style="bg-u:dependencies/clockwidget/hours/hrs-08-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-08-50" name="Tab 54" style="bg-u:dependencies/clockwidget/hours/hrs-08-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-00" name="Tab 55" style="bg-u:dependencies/clockwidget/hours/hrs-09-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-10" name="Tab 56" style="bg-u:dependencies/clockwidget/hours/hrs-09-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-20" name="Tab 57" style="bg-u:dependencies/clockwidget/hours/hrs-09-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-30" name="Tab 58" style="bg-u:dependencies/clockwidget/hours/hrs-09-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-40" name="Tab 59" style="bg-u:dependencies/clockwidget/hours/hrs-09-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-09-50" name="Tab 60" style="bg-u:dependencies/clockwidget/hours/hrs-09-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-00" name="Tab 61" style="bg-u:dependencies/clockwidget/hours/hrs-10-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-10" name="Tab 62" style="bg-u:dependencies/clockwidget/hours/hrs-10-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-20" name="Tab 63" style="bg-u:dependencies/clockwidget/hours/hrs-10-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-30" name="Tab 64" style="bg-u:dependencies/clockwidget/hours/hrs-10-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-40" name="Tab 65" style="bg-u:dependencies/clockwidget/hours/hrs-10-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-10-50" name="Tab 66" style="bg-u:dependencies/clockwidget/hours/hrs-10-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-00" name="Tab 67" style="bg-u:dependencies/clockwidget/hours/hrs-11-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-10" name="Tab 68" style="bg-u:dependencies/clockwidget/hours/hrs-11-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-20" name="Tab 69" style="bg-u:dependencies/clockwidget/hours/hrs-11-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-30" name="Tab 70" style="bg-u:dependencies/clockwidget/hours/hrs-11-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-40" name="Tab 71" style="bg-u:dependencies/clockwidget/hours/hrs-11-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-11-50" name="Tab 72" style="bg-u:dependencies/clockwidget/hours/hrs-11-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-00" name="Tab 73" style="bg-u:dependencies/clockwidget/hours/hrs-12-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-10" name="Tab 74" style="bg-u:dependencies/clockwidget/hours/hrs-12-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-20" name="Tab 75" style="bg-u:dependencies/clockwidget/hours/hrs-12-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-30" name="Tab 76" style="bg-u:dependencies/clockwidget/hours/hrs-12-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-40" name="Tab 77" style="bg-u:dependencies/clockwidget/hours/hrs-12-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-12-50" name="Tab 78" style="bg-u:dependencies/clockwidget/hours/hrs-12-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-00" name="Tab 79" style="bg-u:dependencies/clockwidget/hours/hrs-13-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-10" name="Tab 80" style="bg-u:dependencies/clockwidget/hours/hrs-13-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-20" name="Tab 81" style="bg-u:dependencies/clockwidget/hours/hrs-13-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-30" name="Tab 82" style="bg-u:dependencies/clockwidget/hours/hrs-13-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-40" name="Tab 83" style="bg-u:dependencies/clockwidget/hours/hrs-13-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-13-50" name="Tab 84" style="bg-u:dependencies/clockwidget/hours/hrs-13-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-00" name="Tab 85" style="bg-u:dependencies/clockwidget/hours/hrs-14-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-10" name="Tab 86" style="bg-u:dependencies/clockwidget/hours/hrs-14-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-20" name="Tab 87" style="bg-u:dependencies/clockwidget/hours/hrs-14-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-30" name="Tab 88" style="bg-u:dependencies/clockwidget/hours/hrs-14-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-40" name="Tab 89" style="bg-u:dependencies/clockwidget/hours/hrs-14-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-14-50" name="Tab 90" style="bg-u:dependencies/clockwidget/hours/hrs-14-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-00" name="Tab 91" style="bg-u:dependencies/clockwidget/hours/hrs-15-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-10" name="Tab 92" style="bg-u:dependencies/clockwidget/hours/hrs-15-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-20" name="Tab 93" style="bg-u:dependencies/clockwidget/hours/hrs-15-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-30" name="Tab 94" style="bg-u:dependencies/clockwidget/hours/hrs-15-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-40" name="Tab 95" style="bg-u:dependencies/clockwidget/hours/hrs-15-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-15-50" name="Tab 96" style="bg-u:dependencies/clockwidget/hours/hrs-15-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-00" name="Tab 97" style="bg-u:dependencies/clockwidget/hours/hrs-16-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-10" name="Tab 98" style="bg-u:dependencies/clockwidget/hours/hrs-16-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-20" name="Tab 99" style="bg-u:dependencies/clockwidget/hours/hrs-16-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-30" name="Tab 100" style="bg-u:dependencies/clockwidget/hours/hrs-16-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-40" name="Tab 101" style="bg-u:dependencies/clockwidget/hours/hrs-16-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-16-50" name="Tab 102" style="bg-u:dependencies/clockwidget/hours/hrs-16-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-00" name="Tab 103" style="bg-u:dependencies/clockwidget/hours/hrs-17-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-10" name="Tab 104" style="bg-u:dependencies/clockwidget/hours/hrs-17-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-20" name="Tab 105" style="bg-u:dependencies/clockwidget/hours/hrs-17-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-30" name="Tab 106" style="bg-u:dependencies/clockwidget/hours/hrs-17-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-40" name="Tab 107" style="bg-u:dependencies/clockwidget/hours/hrs-17-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-17-50" name="Tab 108" style="bg-u:dependencies/clockwidget/hours/hrs-17-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-00" name="Tab 109" style="bg-u:dependencies/clockwidget/hours/hrs-18-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-10" name="Tab 110" style="bg-u:dependencies/clockwidget/hours/hrs-18-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-20" name="Tab 111" style="bg-u:dependencies/clockwidget/hours/hrs-18-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-30" name="Tab 112" style="bg-u:dependencies/clockwidget/hours/hrs-18-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-40" name="Tab 113" style="bg-u:dependencies/clockwidget/hours/hrs-18-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-18-50" name="Tab 114" style="bg-u:dependencies/clockwidget/hours/hrs-18-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-00" name="Tab 115" style="bg-u:dependencies/clockwidget/hours/hrs-19-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-10" name="Tab 116" style="bg-u:dependencies/clockwidget/hours/hrs-19-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-20" name="Tab 117" style="bg-u:dependencies/clockwidget/hours/hrs-19-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-30" name="Tab 118" style="bg-u:dependencies/clockwidget/hours/hrs-19-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-40" name="Tab 119" style="bg-u:dependencies/clockwidget/hours/hrs-19-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-19-50" name="Tab 120" style="bg-u:dependencies/clockwidget/hours/hrs-19-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-00" name="Tab 121" style="bg-u:dependencies/clockwidget/hours/hrs-20-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-10" name="Tab 122" style="bg-u:dependencies/clockwidget/hours/hrs-20-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-20" name="Tab 123" style="bg-u:dependencies/clockwidget/hours/hrs-20-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-30" name="Tab 124" style="bg-u:dependencies/clockwidget/hours/hrs-20-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-40" name="Tab 125" style="bg-u:dependencies/clockwidget/hours/hrs-20-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-20-50" name="Tab 126" style="bg-u:dependencies/clockwidget/hours/hrs-20-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-00" name="Tab 127" style="bg-u:dependencies/clockwidget/hours/hrs-21-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-10" name="Tab 128" style="bg-u:dependencies/clockwidget/hours/hrs-21-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-20" name="Tab 129" style="bg-u:dependencies/clockwidget/hours/hrs-21-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-30" name="Tab 130" style="bg-u:dependencies/clockwidget/hours/hrs-21-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-40" name="Tab 131" style="bg-u:dependencies/clockwidget/hours/hrs-21-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-21-50" name="Tab 132" style="bg-u:dependencies/clockwidget/hours/hrs-21-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-00" name="Tab 133" style="bg-u:dependencies/clockwidget/hours/hrs-22-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-10" name="Tab 134" style="bg-u:dependencies/clockwidget/hours/hrs-22-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-20" name="Tab 135" style="bg-u:dependencies/clockwidget/hours/hrs-22-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-30" name="Tab 136" style="bg-u:dependencies/clockwidget/hours/hrs-22-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-40" name="Tab 137" style="bg-u:dependencies/clockwidget/hours/hrs-22-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-22-50" name="Tab 138" style="bg-u:dependencies/clockwidget/hours/hrs-22-50.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-00" name="Tab 139" style="bg-u:dependencies/clockwidget/hours/hrs-23-00.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-10" name="Tab 140" style="bg-u:dependencies/clockwidget/hours/hrs-23-10.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-20" name="Tab 141" style="bg-u:dependencies/clockwidget/hours/hrs-23-20.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-30" name="Tab 142" style="bg-u:dependencies/clockwidget/hours/hrs-23-30.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-40" name="Tab 143" style="bg-u:dependencies/clockwidget/hours/hrs-23-40.svg;bg-fill:none;"/>
+         <abs id="%value['clock.id'][0]%hrs-23-50" name="Tab 144" style="bg-u:dependencies/clockwidget/hours/hrs-23-50.svg;bg-fill:none;"/>
+      </tab>
+   </abs>
+   
+   
+   <simplegrid cols="2" height="50" left="36" top="476" width="461">
+      <label name="Time Zone Offset" style="txt-align:center"/>
+      <param expand="true" oid="offset" showlabel="false"/>
+   </simplegrid>
+   
+</abs>
